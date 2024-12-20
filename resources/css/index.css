@@ -1,0 +1,926 @@
+/* Global Styling*/
+
+html {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+main, footer {
+    position: relative;
+    top: 85px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #06507d;
+    margin-bottom: 1.2rem; 
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 700;
+    color: #06507d;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+p {
+    line-height: 1.6;
+    text-align: left;
+}
+
+li span {
+    font-weight: 700;
+}
+
+/*Header*/
+
+
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#logoandnavbar {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    justify-content: start;
+    width: 60%;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-family: "Exo 2", sans-serif;
+}
+
+#logo img {
+    width: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#logoinletters {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0rem;
+}
+
+/* Navbar list item styling */
+#navbar li {
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    transition: all 0.3s ease-in-out;
+    margin: 0 1.5rem;
+}
+
+/* Hover effect for navbar items */
+#navbar li:hover {
+    background-color: #2b70e4;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#login {
+    width: 22%;
+}
+
+#login ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-right: 1rem;
+    padding-left: 0rem;
+    }
+
+#login li {
+    padding: 0 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#login li:hover {
+    color: #2b70e4;
+    text-decoration-line: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#logo img:hover, #logo p:hover {
+    cursor: pointer;
+}
+
+/*MAIN - INTRO SECTION*/
+
+/* Styling for h1 and p*/
+
+#introdescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#introdescription h1 {
+    width: 75%;
+    text-align: center;
+}
+
+#introdescription p {
+    width: 85%;
+    text-align: center;
+}
+
+/*Styling for buttons*/
+
+#intromoreinfo {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+#intromoreinfo div {
+    padding: 0.75rem 1.5rem;
+    margin: 0 3rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Styling for #moreinfobutton*/
+
+#moreinfobutton {
+    background-color: #209d5c;
+    color: white;
+}
+
+#moreinfobutton:hover {
+    background-color: #187a47;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#moreinfobutton:active {
+    background-color: #135c35;
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for #whybutton*/
+
+#whybutton {
+    background-color: #ffd034;
+}
+
+#whybutton:hover {
+    background-color: #e2b72e;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#whybutton:active {
+    background-color: #c69d27;
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Styling for image*/
+
+#introimg {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+#introimg img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Section positioning*/
+#solutionssections, #whyflutkissection {
+    margin: 2.5rem 1.5rem;
+}
+
+/*MAIN - SOLUTIONS  SECTION*/
+
+/* Display modules as flex */
+#solutionsprocess, #solutionstructure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+}
+
+/* Individual module styling */
+#solutionsprocess figure, #solutionstructure figure  {
+    max-width: 280px;
+    min-width: 280px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+#solutionsprocess figure:hover, #solutionstructure figure:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+#solutionsprocess figure img, #solutionstructure figure img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Caption styling */
+#solutionsprocess figure figcaption h4, #solutionstructure figure figcaption h4 {
+    font-size: 1.125rem;
+    color: #2b70e4;
+    margin-bottom: 10px;
+}
+
+#solutionsprocess figure figcaption p, #solutionstructure figure figcaption p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*Styling for image*/
+
+#digitization {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+#digitization img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*MAIN - WHY FLUKTIS SECTION + TRY FLUKTIS SECTION*/
+
+/* Parent container: Flexbox layout */
+#whycentralize, #whysuppliers, #tryfructiscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #whyflexibility {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    margin: 1rem 0;
+  }
+
+  /* Text containers */
+  #whycentralizedetail, #whyflexibilitydetail, #whysuppliersdetail, #tryfruktisdescription {
+    flex: 1;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3rem;
+  }
+  
+  /* Image container */
+  #whycentralizeimg, #whyflexibilityimg, #whysuppliersimg, #tryfruktisimg {
+    flex: 0.25;
+    max-width: 500px;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* Image styling */
+  #whycentralizeimg img, #whyflexibilityimg img, #whysuppliersimg img, #tryfruktisimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Text elements (p and ul) */
+  #whycentralizedetail p, #whyflexibilitydetail p, #whysuppliersdetail p, #tryfruktisdescription p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 0.9375rem;
+  }
+  
+  #whycentralizedetail ul, #whyflexibilitydetail ul, #whysuppliersdetail ul, #tryfruktisdescription ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin-top: 0.625rem;
+  }
+  
+  #whycentralizedetail li, #whyflexibilitydetail li, #whysuppliersdetail li, #tryfruktisdescription li {
+    text-align: justify;
+    margin-bottom: 0.625rem;
+  }
+  
+  /* Headings */
+  #whycentralizedetail h3, #whyflexibilitydetail h3, #whysuppliersdetail h3 {
+    margin-bottom: 0.9375rem;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  #databaseimgcontainer {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+#databaseimgcontainer img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*MAIN - TRY FLUKTIS SECTION*/
+
+/* Parent section container */
+#tryfruktissection {
+    margin-left: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#tryfructiscontainer {
+    margin-bottom: 2.5rem;
+}
+
+/* Parent section container */
+#tryfruktisdescription {
+    align-items: center;
+}
+
+/* Text styling */
+#tryfruktissection h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#tryfruktisdescription ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#tryfruktisdescription li h3 {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Button container */
+#tryfluktisbutton {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+#tryfluktisbutton p {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    background-color: #ffd034;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Button hover effect */
+#tryfluktisbutton p:hover {
+    background-color: #e2b72e;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Button active effect */
+#tryfluktisbutton p:active {
+    background-color: #c69d27;
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* JS Logo Container */
+
+#jslogo {
+    width: 100%; /* Take the full width of the page */
+    height: 150px; /* Set the height of the container */
+    background-image: url('../images/JS\ Logo.png'); /* Path to your image */
+    background-repeat: repeat-x; /* Repeat the image horizontally */
+    background-position: top left; /* Align the image to the top-left */
+    background-size: auto 150px; /* Scale the image height to 150px, width adjusts automatically */
+    overflow: hidden; /* Ensure any overflow is hidden */
+}
+
+/*MAIN - JS SECTION*/
+
+/* General Styling */
+#jsappssection {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+#jsapplargestintegercontainer, #jsappballgamecontainer, #jsappcreatecirclescontainer, #jsappdivideandordercontainer {
+    scroll-margin-top: 100px;
+}
+
+#jsappscontainers {
+    margin-bottom: 2.5rem;
+}
+
+#jsapplargestinteger, #integerlabelsandinputs, #createcircleslabelsandinputs, #jsappballgame, #jsappcreatecircles, #jsappdivideandorder {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  #jsapplargestintegercontainer, #jsappballgamecontainer, #jsappcreatecirclescontainer, #jsappdivideandorder {
+    align-items: center;
+    justify-content: left;
+    padding: 1.25rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+  }
+
+#jsappssection h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+/* BUTTONS */
+
+#largestintegerbutton, #ballgamebutton, #createcirclesbutton, #divideandorderbutton, #tryagainlargestinteggerbutton, #ballgamerestartbutton, #ballgameinstructionsbutton, #circlegamerestartbutton, #createballsinstructionsbutton {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    }
+
+/* Button styling */
+#largestintegerbutton p, #ballgamebutton p, #createcirclesbutton p, #divideandorderbutton p, #tryagainlargestinteggerbutton p, #ballgamerestartbutton p, #ballgameinstructionsbutton p, #circlegamerestartbutton p, #createballsinstructionsbutton p {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    background-color: #d3d3d3;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Button hover effect */
+#largestintegerbutton p:hover, #ballgamebutton p:hover, #createcirclesbutton p:hover, #divideandorderbutton p:hover, #tryagainlargestinteggerbutton p:hover, #ballgamerestartbutton p:hover, #ballgameinstructionsbutton p:hover, #circlegamerestartbutton p:hover, #createballsinstructionsbutton p:hover {
+    background-color: #b0b0b0;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Button active effect */
+#largestintegerbutton p:active, #ballgamebutton p:active, #createcirclesbutton p:active, #divideandorderbutton p:active, #tryagainlargestinteggerbutton p:active, #ballgamerestartbutton p:active, #ballgameinstructionsbutton p:active, #circlegamerestartbutton p:active, #createballsinstructionsbutton p:active {
+    background-color: #808080;
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #f0f0f0;
+}
+
+/* INPUT FIELDS */
+
+.form-inline {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#integerlabelsandinputs, #integerformbuttons, #createcircleslabelsandinputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inputandlabels {
+    margin-right: 2rem;
+    margin-bottom: 2.5rem
+}
+
+  /* General styling for the form labels */
+  .form-label {
+    color: #333;
+    font-weight: bold;
+    margin-right: 0.3125rem; 
+    margin-left: 1.25rem;
+  }
+  
+  /* Input field styling */
+  input[type="number"] {
+    width: 8.25rem;
+    padding: 0.5rem;
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Input focus effect */
+  input[type="number"]:focus {
+    border-color: #808080;
+    outline: none;
+  }
+
+  /* Dropdown list styling */
+
+select {
+    width: 8.25rem;
+    padding: 0.5rem;
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #808080;
+    outline: none;
+}
+
+
+  /* Range styling */
+
+#rangecontainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.rangelabel {
+    color: #333;
+    font-size: 0.875rem;
+}
+
+  /* Submit / instructions button positioning */
+
+  #createcirclesformbuttons, #integerformbuttons {
+    display:flex;
+    justify-content:space-evenly;
+  }
+
+  /* Submit / instructions button styling */
+#submitButton, #integerinstructionsbutton, #submitbuttongenerate, #createcirclesinstructionsbutton, #addnumberbutton, #cleannumberbutton, #divideandorderorderbutton, #divideandorderinstructionsbutton, #adddivisorbutton, #divideandorderrestartbutton {
+    background-color: #d3d3d3;
+    color: #333;
+    border: 1px solid #b0b0b0;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 40px;
+  }
+  
+  /* Submit / instructions button hover effect */
+  #submitButton:hover, #integerinstructionsbutton:hover, #submitbuttongenerate:hover,
+  #createcirclesinstructionsbutton:hover, #addnumberbutton:hover, #cleannumberbutton:hover, #divideandorderorderbutton:hover, #divideandorderinstructionsbutton:hover, #adddivisorbutton:hover, #divideandorderrestartbutton:hover {
+    background-color: #b0b0b0;
+  }
+  
+  /* Submit / instructions button active effect */
+  #submitButton:active, #integerinstructionsbutton:active, #submitbuttongenerate:active,
+  #createcirclesinstructionsbutton:active, #addnumberbutton:active, #cleannumberbutton:active, #divideandorderorderbutton:active, #divideandorderinstructionsbutton:active, #adddivisorbutton:active, #divideandorderrestartbutton:active {
+    background-color: #808080;
+    color: #ffffff;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  /* Remove spinners */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+#largestintegerlabels, #result-message-container {
+    display: none;
+}
+
+#largestintegerlabels p, #createcircleslabels p {
+    margin-bottom: 3rem;
+}
+
+/* BALL GAME */
+
+/* Game container */
+#ballgamecontainer {
+    display: none;
+    width: 900px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 3px solid #808080;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  /* Ball styling */
+  #ballgameball {
+    width: 30px;
+    height: 30px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-property: all;
+    transition-duration: 2s;
+  }
+  
+  /* Base styling */
+  #ballgamebase {
+    width: 100px;
+    height: 15px;
+    background-color: #333;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+
+  /* Messages */
+  #startmessage {
+    display:block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+  #lostmessage {
+    display:none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+  #winmessage {
+    display:none;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: gold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #lostmessage p, #winmessage p, #startmessage p {
+    text-align:center;
+  }
+
+  #ballgamecommands, #createballscommands {
+    display: none;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  /* CIRCLES GAME */
+
+  /* Container for random circles */
+#createcirclescontainer {
+    width: 900px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 3px solid #808080;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #createcirclescontainer {
+    display:none;
+  }
+
+  /* Form */
+
+  #createcircleslabels, #divideandorderlabels {
+    display: none;
+  }
+
+  /* FOOTER */
+
+/* Footer styling */
+footer {
+    background-color: #053e61;
+    padding: 2rem 0 0 0;
+    margin-top: 4rem;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Top footer section */
+#topfooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0rem 4rem;
+    min-height: 150px;
+}
+
+#topfooter > ul:first-child {
+    display: flex;
+    list-style: none;
+    gap: 8rem;
+    width: 70%;
+    padding-left: 0;
+}
+
+#topfooter > ul:last-child {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Main categories in top footer */
+#topfooter > ul:first-child > li {
+    color: #ffd034;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Subcategories styling */
+#topfooter > ul:first-child > li > ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+#topfooter > ul:first-child > li > ul > li {
+    color: #e0e0e0;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0.7rem 0;
+    transition: color 0.3s ease-in-out;
+}
+
+#topfooter > ul:first-child > li > ul > li:hover {
+    color: #2b70e4;
+    cursor: pointer;
+}
+
+/* Language and login styling in top footer */
+#topfooter > ul:last-child > li {
+    color: #e0e0e0;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+#topfooter > ul:last-child > li:hover {
+    color: #2b70e4;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* Bottom footer section */
+#bottomfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 4rem; 
+    min-height: 60px;
+    background-color: white;
+}
+
+#footerlogo p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: black;
+    margin: 0;
+}
+
+#socialnetworksfooter {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#socialnetworksfooter img {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#socialnetworksfooter img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#footercopyright p {
+    color: black;
+    font-size: 0.9rem;
+    margin: 0;
+}
